@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finxmods Download - Pengunduh TikTok & Instagram</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#312e81',
+                            accent: '#06b6d4',
+                            emerald: '#10b981'
+                        },
+                        darkbg: '#0b0f19',
+                        darkcard: '#111827',
+                        darkborder: '#1f2937'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            font-family: 'Inter', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(99, 102, 241, 0.25);
+        }
+        .glow-effect-lg {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.2);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #111827;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #374151;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-brand-500 selection:text-white custom-scrollbar">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-gray-800 bg-darkbg/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-accent flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-brand-500/30">
+                    <i class="fa-solid font-bold fa-bolt"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-brand-accent">
+                        Finxmods <span class="text-brand-500 font-medium">Download</span>
+                    </span>
+                    <span class="block text-[10px] text-gray-400 tracking-wider font-semibold uppercase">Pro Downloader Engine</span>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <div class="hidden sm:flex items-center space-x-2 text-xs text-gray-400 bg-gray-900 border border-gray-800 px-3 py-1.5 rounded-full">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span>Server Status: <strong class="text-emerald-400 font-medium">Optimal (99.9%)</strong></span>
+                </div>
+                <button onclick="toggleHistoryModal()" class="p-2 text-gray-400 hover:text-white bg-gray-900 hover:bg-gray-800 border border-gray-800 rounded-lg transition-all relative" title="Riwayat Unduhan">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span id="historyBadge" class="hidden absolute -top-1 -right-1 w-4 h-4 bg-brand-500 text-white text-[10px] rounded-full flex items-center justify-center font-bold">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+        
+        <!-- Hero Section -->
+        <section class="text-center mb-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-500 text-xs font-semibold mb-4">
+                <i class="fa-solid fa-shield-halved"></i> Aman, Cepat & Tanpa Watermark
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
+                Pengunduh Media <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-500 via-brand-accent to-emerald-400">TikTok & Instagram</span> High-Speed
+            </h1>
+            <p class="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+                Platform profesional untuk mengunduh konten video (MP4) dan audio (MP3) kualitas tinggi secara gratis tanpa batasan.
+            </p>
+        </section>
+
+        <!-- Downloader Card -->
+        <section class="bg-darkcard border border-gray-800 rounded-2xl p-4 sm:p-8 glow-effect-lg relative overflow-hidden mb-12">
+            <!-- Background Decorative Glow -->
+            <div class="absolute -top-24 -right-24 w-60 h-60 bg-brand-600/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-24 -left-24 w-60 h-60 bg-brand-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <!-- Format Selection Segment -->
+            <div class="mb-6 flex justify-center">
+                <div class="inline-flex p-1 bg-gray-900 border border-gray-800 rounded-xl">
+                    <button id="btnFormatMp4" onclick="selectFormat('mp4')" class="flex items-center space-x-2 px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-brand-600 text-white shadow-md">
+                        <i class="fa-solid fa-video"></i>
+                        <span>Format MP4 (Video HD)</span>
+                    </button>
+                    <button id="btnFormatMp3" onclick="selectFormat('mp3')" class="flex items-center space-x-2 px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-gray-400 hover:text-white">
+                        <i class="fa-solid fa-music"></i>
+                        <span>Format MP3 (Audio HQ)</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Input Form -->
+            <form id="downloadForm" onsubmit="handleProcess(event)" class="space-y-4">
+                <div class="relative flex flex-col sm:flex-row items-center gap-2">
+                    <div class="relative w-full">
+                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-500">
+                            <i id="platformIcon" class="fa-solid fa-link text-lg"></i>
+                        </div>
+                        <input type="url" id="videoUrl" placeholder="Tempel link TikTok atau Instagram di sini..." required
+                            class="w-full pl-11 pr-24 py-4 bg-gray-900 border border-gray-700/70 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-sm sm:text-base transition-all">
+                        
+                        <button type="button" onclick="pasteFromClipboard()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-800 hover:bg-gray-700 text-gray-300 px-3 py-2 rounded-lg text-xs font-medium transition-all border border-gray-700 flex items-center gap-1.5">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <span>Tempel</span>
+                        </button>
+                    </div>
+
+                    <button type="submit" id="btnSubmit" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-500 hover:to-brand-600 text-white font-bold rounded-xl shadow-lg shadow-brand-600/30 hover:shadow-brand-600/50 transition-all flex items-center justify-center gap-2 min-w-[140px]">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Unduh</span>
+                    </button>
+                </div>
+                
+                <!-- Platform Auto-Detector Badge -->
+                <div class="flex items-center justify-between px-2 text-xs text-gray-400">
+                    <div id="detectedPlatformText" class="flex items-center gap-2">
+                        <span class="text-gray-500">Mendukung:</span>
+                        <span class="inline-flex items-center gap-1 text-gray-300"><i class="fa-brands fa-tiktok"></i> TikTok</span>
+                        <span class="text-gray-600">•</span>
+                        <span class="inline-flex items-center gap-1 text-gray-300"><i class="fa-brands fa-instagram"></i> Instagram</span>
+                    </div>
+                    <button type="button" onclick="clearInput()" class="text-gray-500 hover:text-gray-300 transition-all">Reset</button>
+                </div>
+            </form>
+
+            <!-- Loading State Container -->
+            <div id="loadingState" class="hidden py-10 text-center">
+                <div class="inline-block relative w-16 h-16 mb-4">
+                    <div class="w-16 h-16 rounded-full border-4 border-brand-500/20 border-t-brand-500 animate-spin"></div>
+                    <div class="absolute inset-0 flex items-center justify-center text-brand-500">
+                        <i class="fa-solid fa-server text-xs"></i>
+                    </div>
+                </div>
+                <p id="loadingStatusText" class="text-gray-200 font-semibold text-sm">Menghubungkan ke server Finxmods...</p>
+                <p class="text-gray-500 text-xs mt-1">Mengekstrak berkas media kualitas tinggi tanpa watermark...</p>
+            </div>
+
+            <!-- Notification Toast / Alert -->
+            <div id="alertBox" class="hidden mt-4 p-4 rounded-xl border text-sm flex items-start gap-3">
+                <i id="alertIcon" class="fa-solid fa-circle-info text-lg mt-0.5"></i>
+                <div id="alertMessage" class="flex-grow"></div>
+            </div>
+
+        </section>
+
+        <!-- Result Card (Hidden by default) -->
+        <section id="resultCard" class="hidden bg-darkcard border border-gray-800 rounded-2xl p-6 glow-effect mb-12">
+            <div class="flex flex-col md:flex-row gap-6 items-center md:items-start">
+                
+                <!-- Preview Thumbnail / Player -->
+                <div class="w-full md:w-64 flex-shrink-0 aspect-square sm:aspect-video md:aspect-square bg-gray-900 rounded-xl overflow-hidden relative border border-gray-800 group">
+                    <img id="resThumbnail" src="" alt="Thumbnail Video" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all">
+                        <span class="p-3 bg-brand-600/80 rounded-full text-white">
+                            <i class="fa-solid fa-play"></i>
+                        </span>
+                    </div>
+                    <span id="resPlatformBadge" class="absolute top-2 left-2 px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-md text-[11px] font-semibold text-white border border-white/10">
+                        TikTok
+                    </span>
+                    <span id="resDuration" class="absolute bottom-2 right-2 px-2 py-0.5 bg-black/80 rounded text-[10px] text-gray-300 font-mono">
+                        00:45
+                    </span>
+                </div>
+
+                <!-- Media Metadata & Download Buttons -->
+                <div class="flex-grow w-full space-y-4">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span id="resAuthor" class="text-xs font-semibold text-brand-accent">@username</span>
+                            <i class="fa-solid fa-circle-check text-brand-500 text-[10px]" title="Terverifikasi"></i>
+                        </div>
+                        <h2 id="resTitle" class="text-base sm:text-lg font-bold text-white line-clamp-2 leading-snug">
+                            Judul video yang berhasil diekstrak dari tautan yang Anda masukkan.
+                        </h2>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3 text-xs bg-gray-900/60 p-3 rounded-xl border border-gray-800">
+                        <div>
+                            <span class="text-gray-500 block">Kualitas Video:</span>
+                            <span id="resQuality" class="font-semibold text-gray-200">1080p Full HD</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 block">Kualitas Audio:</span>
+                            <span id="resAudioBitrate" class="font-semibold text-gray-200">320 kbps (HQ)</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Download Options -->
+                    <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                        <button onclick="triggerDownload('mp4')" class="flex-1 px-5 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-xl text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-900/20 transition-all">
+                            <i class="fa-solid fa-download"></i>
+                            <span>Unduh MP4 (HD)</span>
+                        </button>
+                        
+                        <button onclick="triggerDownload('mp3')" class="flex-1 px-5 py-3 bg-brand-600 hover:bg-brand-500 text-white font-semibold rounded-xl text-sm flex items-center justify-center gap-2 shadow-lg shadow-brand-900/20 transition-all">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Unduh MP3 (Audio)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-darkcard border border-gray-800/80 p-5 rounded-xl hover:border-gray-700 transition-all">
+                <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center text-lg mb-3">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="text-white font-bold text-sm mb-1">Kecepatan Tinggi</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">Proses ekstraksi tautan super cepat dalam hitungan detik langsung dari server Finxmods.</p>
+            </div>
+
+            <div class="bg-darkcard border border-gray-800/80 p-5 rounded-xl hover:border-gray-700 transition-all">
+                <div class="w-10 h-10 rounded-lg bg-brand-accent/10 text-brand-accent flex items-center justify-center text-lg mb-3">
+                    <i class="fa-solid fa-ban-smoke"></i>
+                </div>
+                <h3 class="text-white font-bold text-sm mb-1">Tanpa Watermark</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">Video hasil unduhan TikTok bersih dari logo dan identitas pengunggah asli.</p>
+            </div>
+
+            <div class="bg-darkcard border border-gray-800/80 p-5 rounded-xl hover:border-gray-700 transition-all">
+                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg mb-3">
+                    <i class="fa-solid fa-compact-disc"></i>
+                </div>
+                <h3 class="text-white font-bold text-sm mb-1">Konversi MP3 HQ</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">Ekstraksi trek audio berformat MP3 jernih dengan kecepatan bit maksimum.</p>
+            </div>
+        </section>
+
+        <!-- User Guide / Instructions -->
+        <section class="bg-darkcard border border-gray-800 rounded-2xl p-6 sm:p-8">
+            <h2 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
+                <i class="fa-solid fa-circle-question text-brand-500"></i>
+                <span>Panduan Cara Penggunaan</span>
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 relative">
+                <div class="space-y-2">
+                    <div class="text-brand-500 font-extrabold text-2xl">01.</div>
+                    <h4 class="text-white font-semibold text-sm">Salin Tautan</h4>
+                    <p class="text-gray-400 text-xs">Buka aplikasi TikTok atau Instagram, pilih video lalu salin tautan (Copy Link).</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-brand-500 font-extrabold text-2xl">02.</div>
+                    <h4 class="text-white font-semibold text-sm">Tempel Link</h4>
+                    <p class="text-gray-400 text-xs">Kembali ke Finxmods Download, tempelkan link pada kolom input di atas.</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-brand-500 font-extrabold text-2xl">03.</div>
+                    <h4 class="text-white font-semibold text-sm">Unduh File</h4>
+                    <p class="text-gray-400 text-xs">Pilih format MP4 atau MP3 yang Anda inginkan, lalu klik tombol unduh.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- History Modal -->
+    <div id="historyModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-darkcard border border-gray-800 rounded-2xl w-full max-w-xl max-h-[80vh] flex flex-col shadow-2xl">
+            <!-- Modal Header -->
+            <div class="p-5 border-b border-gray-800 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-clock-rotate-left text-brand-500"></i>
+                    <h3 class="text-white font-bold text-base">Riwayat Unduhan Lokal</h3>
+                </div>
+                <button onclick="toggleHistoryModal()" class="text-gray-400 hover:text-white p-1">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Modal Body / History List -->
+            <div id="historyList" class="p-5 overflow-y-auto space-y-3 flex-grow custom-scrollbar">
+                <!-- Dynamic Content Here -->
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="p-4 border-t border-gray-800 flex justify-between items-center bg-gray-900/50 rounded-b-2xl">
+                <button onclick="clearHistory()" class="text-xs text-red-400 hover:text-red-300 font-semibold flex items-center gap-1.5">
+                    <i class="fa-solid fa-trash"></i> Bersihkan Riwayat
+                </button>
+                <button onclick="toggleHistoryModal()" class="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white text-xs font-semibold rounded-lg">
+                    Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 bg-darkbg py-8 mt-12 text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-3">
+            <p class="font-medium text-gray-400">&copy; 2026 Finxmods Download. Seluruh hak cipta dilindungi.</p>
+            <p class="max-w-xl mx-auto text-gray-600">Finxmods Download adalah layanan alat bantu unduh independen dan tidak terafiliasi secara resmi dengan TikTok atau Instagram.</p>
+        </div>
+    </footer>
+
+    <script>
+        // State Management
+        let selectedFormat = 'mp4';
+        let currentExtractionData = null;
+        let downloadHistory = JSON.parse(localStorage.getItem('finxmods_history') || '[]');
+
+        // Initialize UI on load
+        window.onload = function() {
+            updateHistoryUI();
+            setupInputListener();
+        };
+
+        // Format selector (MP4 vs MP3)
+        function selectFormat(format) {
+            selectedFormat = format;
+            const btnMp4 = document.getElementById('btnFormatMp4');
+            const btnMp3 = document.getElementById('btnFormatMp3');
+
+            if (format === 'mp4') {
+                btnMp4.className = "flex items-center space-x-2 px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-brand-600 text-white shadow-md";
+                btnMp3.className = "flex items-center space-x-2 px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-gray-400 hover:text-white";
+            } else {
+                btnMp3.className = "flex items-center space-x-2 px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-brand-600 text-white shadow-md";
+                btnMp4.className = "flex items-center space-x-2 px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-gray-400 hover:text-white";
+            }
+        }
+
+        // Live URL Detector
+        function setupInputListener() {
+            const input = document.getElementById('videoUrl');
+            const icon = document.getElementById('platformIcon');
+
+            input.addEventListener('input', (e) => {
+                const url = e.target.value.toLowerCase();
+                if (url.includes('tiktok.com')) {
+                    icon.className = "fa-brands fa-tiktok text-lg text-cyan-400";
+                } else if (url.includes('instagram.com')) {
+                    icon.className = "fa-brands fa-instagram text-lg text-pink-500";
+                } else {
+                    icon.className = "fa-solid fa-link text-lg text-gray-500";
+                }
+            });
+        }
+
+        // Paste clipboard text
+        function pasteFromClipboard() {
+            const input = document.getElementById('videoUrl');
+            if (navigator.clipboard && navigator.clipboard.readText) {
+                navigator.clipboard.readText().then(text => {
+                    input.value = text;
+                    input.dispatchEvent(new Event('input'));
+                    showAlert('Tautan berhasil ditempel dari papan klip!', 'info');
+                }).catch(() => {
+                    showAlert('Gagal membaca papan klip. Silakan tempel secara manual.', 'warning');
+                });
+            } else {
+                showAlert('Fitur clipboard otomatis tidak didukung browser ini.', 'warning');
+            }
+        }
+
+        function clearInput() {
+            document.getElementById('videoUrl').value = '';
+            document.getElementById('platformIcon').className = "fa-solid fa-link text-lg text-gray-500";
+            document.getElementById('resultCard').classList.add('hidden');
+            hideAlert();
+        }
+
+        // Processing / Extracting Engine Simulator
+        function handleProcess(e) {
+            e.preventDefault();
+            const urlInput = document.getElementById('videoUrl').value.trim();
+            const loadingState = document.getElementById('loadingState');
+            const resultCard = document.getElementById('resultCard');
+
+            hideAlert();
+
+            if (!urlInput) {
+                showAlert('Harap masukkan tautan video TikTok atau Instagram yang valid.', 'error');
+                return;
+            }
+
+            const isTikTok = urlInput.includes('tiktok.com');
+            const isInstagram = urlInput.includes('instagram.com');
+
+            if (!isTikTok && !isInstagram) {
+                showAlert('Format URL tidak dikenali. Pastikan URL berasal dari TikTok atau Instagram.', 'error');
+                return;
+            }
+
+            // UI Loading Simulation
+            loadingState.classList.remove('hidden');
+            resultCard.classList.add('hidden');
+
+            const statusText = document.getElementById('loadingStatusText');
+            statusText.innerText = "Mengkoneksikan ke Server Finxmods...";
+
+            setTimeout(() => {
+                statusText.innerText = `Mengekstrak data dari ${isTikTok ? 'TikTok' : 'Instagram'}...`;
+            }, 800);
+
+            setTimeout(() => {
+                loadingState.classList.add('hidden');
+                
+                // Construct Mock Extract Data
+                const platform = isTikTok ? 'TikTok' : 'Instagram';
+                currentExtractionData = {
+                    id: Date.now(),
+                    platform: platform,
+                    title: isTikTok 
+                        ? "Trending Dance Challenge & Viral Beat #finxmods #viral" 
+                        : "Cinematic Aesthetic Travel Reel - Sunset Vibes",
+                    author: isTikTok ? "@creator_viral" : "@photographer_pro",
+                    thumbnail: isTikTok 
+                        ? "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500&auto=format&fit=crop&q=80" 
+                        : "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&auto=format&fit=crop&q=80",
+                    duration: isTikTok ? "00:30" : "01:00",
+                    url: urlInput,
+                    date: new Date().toLocaleDateString('id-ID', { hour: '2-digit', minute: '2-digit' })
+                };
+
+                // Render Preview Card
+                document.getElementById('resThumbnail').src = currentExtractionData.thumbnail;
+                document.getElementById('resTitle').innerText = currentExtractionData.title;
+                document.getElementById('resAuthor').innerText = currentExtractionData.author;
+                document.getElementById('resPlatformBadge').innerText = platform;
+                document.getElementById('resPlatformBadge').className = isTikTok 
+                    ? "absolute top-2 left-2 px-2.5 py-1 bg-cyan-950/80 text-cyan-400 border border-cyan-500/30 backdrop-blur-md rounded-md text-[11px] font-semibold"
+                    : "absolute top-2 left-2 px-2.5 py-1 bg-pink-950/80 text-pink-400 border border-pink-500/30 backdrop-blur-md rounded-md text-[11px] font-semibold";
+                document.getElementById('resDuration').innerText = currentExtractionData.duration;
+
+                resultCard.classList.remove('hidden');
+                resultCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+                showAlert('Media berhasil diekstrak! Silakan pilih format unduhan di bawah.', 'success');
+
+            }, 1800);
+        }
+
+        function triggerDownload(format) {
+            if (!currentExtractionData) return;
+
+            const formatLabel = format.toUpperCase();
+            showAlert(`Memulai pengunduhan file berkas ${formatLabel}...`, 'success');
+
+            // Save to Local History
+            const historyItem = {
+                ...currentExtractionData,
+                downloadFormat: formatLabel,
+                timestamp: new Date().getTime()
+            };
+
+            downloadHistory.unshift(historyItem);
+            if (downloadHistory.length > 20) downloadHistory.pop(); // limit 20 items
+            
+            localStorage.setItem('finxmods_history', JSON.stringify(downloadHistory));
+            updateHistoryUI();
+
+            // Simulate file download by creating anchor blob
+            const dummyContent = `[Finxmods Download Engine]\nFile: ${currentExtractionData.title}\nFormat: ${formatLabel}\nSource: ${currentExtractionData.url}`;
+            const blob = new Blob([dummyContent], { type: 'text/plain' });
+            const downloadUrl = window.URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = downloadUrl;
+            a.download = `Finxmods_${currentExtractionData.platform}_${Date.now()}.${format}`;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(downloadUrl);
+            document.body.removeChild(a);
+        }
+
+        // History UI Functions
+        function toggleHistoryModal() {
+            const modal = document.getElementById('historyModal');
+            modal.classList.toggle('hidden');
+        }
+
+        function updateHistoryUI() {
+            const badge = document.getElementById('historyBadge');
+            const historyList = document.getElementById('historyList');
+
+            if (downloadHistory.length > 0) {
+                badge.innerText = downloadHistory.length;
+                badge.classList.remove('hidden');
+
+                historyList.innerHTML = downloadHistory.map((item) => `
+                    <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl flex items-center justify-between gap-3">
+                        <div class="flex items-center gap-3 overflow-hidden">
+                            <img src="${item.thumbnail}" class="w-12 h-12 rounded-lg object-cover flex-shrink-0" alt="thumb">
+                            <div class="overflow-hidden">
+                                <h5 class="text-xs font-bold text-white truncate">${item.title}</h5>
+                                <div class="flex items-center gap-2 text-[10px] text-gray-400 mt-0.5">
+                                    <span class="text-brand-accent">${item.platform}</span>
+                                    <span>•</span>
+                                    <span class="px-1.5 py-0.5 bg-gray-800 rounded font-mono text-gray-300">${item.downloadFormat}</span>
+                                    <span>•</span>
+                                    <span>${item.date}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="${item.url}" target="_blank" class="p-2 text-gray-400 hover:text-white bg-gray-800 rounded-lg text-xs" title="Buka Link Asli">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                `).join('');
+            } else {
+                badge.classList.add('hidden');
+                historyList.innerHTML = `
+                    <div class="text-center py-8 text-gray-500">
+                        <i class="fa-solid fa-box-open text-3xl mb-2 opacity-50"></i>
+                        <p class="text-xs">Belum ada riwayat unduhan.</p>
+                    </div>
+                `;
+            }
+        }
+
+        function clearHistory() {
+            downloadHistory = [];
+            localStorage.removeItem('finxmods_history');
+            updateHistoryUI();
+            showAlert('Riwayat unduhan berhasil dibersihkan.', 'info');
+        }
+
+        // Alert Helper
+        function showAlert(msg, type = 'info') {
+            const alertBox = document.getElementById('alertBox');
+            const alertIcon = document.getElementById('alertIcon');
+            const alertMessage = document.getElementById('alertMessage');
+
+            alertBox.classList.remove('hidden', 'bg-red-950/50', 'border-red-800', 'text-red-300', 'bg-emerald-950/50', 'border-emerald-800', 'text-emerald-300', 'bg-brand-950/50', 'border-brand-800', 'text-brand-300');
+
+            if (type === 'error') {
+                alertBox.classList.add('bg-red-950/50', 'border-red-800', 'text-red-300');
+                alertIcon.className = "fa-solid fa-circle-exclamation text-lg text-red-400 mt-0.5";
+            } else if (type === 'success') {
+                alertBox.classList.add('bg-emerald-950/50', 'border-emerald-800', 'text-emerald-300');
+                alertIcon.className = "fa-solid fa-circle-check text-lg text-emerald-400 mt-0.5";
+            } else {
+                alertBox.classList.add('bg-brand-950/50', 'border-brand-800', 'text-brand-300');
+                alertIcon.className = "fa-solid fa-circle-info text-lg text-brand-400 mt-0.5";
+            }
+
+            alertMessage.innerText = msg;
+        }
+
+        function hideAlert() {
+            document.getElementById('alertBox').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
